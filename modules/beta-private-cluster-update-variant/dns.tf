@@ -19,6 +19,7 @@
 /******************************************
   Delete default kube-dns configmap
  *****************************************/
+ /*
 module "gcloud_delete_default_kube_dns_configmap" {
   source           = "terraform-google-modules/gcloud/google//modules/kubectl-wrapper"
   version          = "~> 1.4"
@@ -39,6 +40,7 @@ module "gcloud_delete_default_kube_dns_configmap" {
     [for pool in google_container_node_pool.pools : pool.name]
   )
 }
+*/
 
 /******************************************
   Create kube-dns confimap
